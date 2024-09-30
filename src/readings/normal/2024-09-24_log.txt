@@ -1,0 +1,8 @@
+16:25:31,Battery Voltage0.47
+16:25:33,Battery Voltage0.47
+16:25:35,Battery Voltage0.47
+16:25:37,Battery Voltage0.47
+16:25:39,Battery Voltage0.47
+16:25:41,Battery Voltage0.47
+16:25:43,Battery Voltage0.47
+16:25:45,Battery Voltage0.47
