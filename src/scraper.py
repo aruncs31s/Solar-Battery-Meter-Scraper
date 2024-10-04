@@ -55,7 +55,7 @@ def measure(date):
             time_now = datetime.now().strftime("%H:%M:%S")
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             print(
-                f"{time_now} Temp {data[0]} Humidity {data[1]} Battery Voltage {data[2]} Light {data[3]} Relay State {data[4]} Rain Volume {data[5]}\n"
+                f"{time_now} Temp {data[0]} - Humidity {data[1]} - Battery Voltage {data[2]} - Light {data[3]} - Relay State {data[4]} - Rain Volume {data[5]}\n"
             )
             # if int(datetime.now().strftime("%M")) % 5 == 0:
             # Save to file
