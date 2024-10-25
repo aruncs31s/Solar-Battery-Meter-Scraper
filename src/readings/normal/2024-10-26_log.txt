@@ -1,0 +1,22 @@
+Time , Battery Voltage ,  Relay State 
+2024-10-26 00:37:42 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:37:44 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:37:45 Battery Voltage  13.06 Relay State off 
+2024-10-26 00:37:47 Battery Voltage  13.04 Relay State off 
+2024-10-26 00:37:48 Battery Voltage  13.06 Relay State off 
+2024-10-26 00:37:50 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:37:52 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:37:54 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:37:55 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:37:57 Battery Voltage  13.06 Relay State off 
+2024-10-26 00:37:59 Battery Voltage  13.06 Relay State off 
+2024-10-26 00:38:01 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:38:02 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:38:04 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:38:05 Battery Voltage  13.06 Relay State off 
+2024-10-26 00:38:06 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:38:08 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:38:09 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:38:10 Battery Voltage  13.02 Relay State off 
+2024-10-26 00:38:12 Battery Voltage  13.06 Relay State off 
+2024-10-26 00:38:13 Battery Voltage  13.02 Relay State off 

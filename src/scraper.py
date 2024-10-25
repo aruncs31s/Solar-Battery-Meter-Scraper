@@ -19,7 +19,8 @@ time_now = datetime.now().strftime("%H:%M:%S")
 
 current_date = datetime.now().strftime("%Y-%m-%d")
 # esp32/esp8266 web server link
-esp_url = "http://192.168.246.50/data"
+# esp_url = "http://192.168.246.50/data"
+esp_url = "http://172.16.32.9/data"
 
 
 def get_esp_data():
@@ -27,12 +28,12 @@ def get_esp_data():
         esp_response = requests.get(esp_url)
         data_json = esp_response.json()
         data = [
-            data_json["temperature"],
-            data_json["humidity"],
+            # data_json["temperature"],
+            # data_json["humidity"],
             data_json["battery_voltage"],
-            data_json["light_sensor_value"],
+            # data_json["light_sensor_value"],
             data_json["led_relayState"],
-            data_json["rain_volume"],
+            # data_json["rain_volume"],
         ]
         return data
     except Exception as e:
@@ -55,31 +56,23 @@ def measure(date):
             # Find if this is necceary
             time_now = datetime.now().strftime("%H:%M:%S")
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            print(
-                f"{time_now} Temp {data[0]} - Humidity {data[1]} - Battery Voltage {data[2]} - Light {data[3]} - Relay State {data[4]} - Rain Volume {data[5]}\n"
-            )
+            print(f"{time_now} Battery Voltage {data[0]} - Relay State {data[1]} \n")
             # if int(datetime.now().strftime("%M")) % 5 == 0:
             # Save to file
             is_file_exists = os.path.isfile(output_file)
             with open(output_file, "a") as f:
                 # Check if the file exists
                 if not is_file_exists:
-                    f.write(
-                        "Time ,  Temperature , Humidity , Battery Voltage , Light Sensor Value, Relay State , Rain Volume \n"
-                    )
+                    f.write("Time , Battery Voltage ,  Relay State \n")
                 f.write(
-                    f"{timestamp} Temp {data[0]} Humidity {data[1]} Battery Voltage {data[2]} Light {data[3]},Led Relay State {data[4]},Rain Volume {data[5]}\n"
+                    f"{timestamp} Battery Voltage  {data[0]} Relay State {data[1]} \n"
                 )
             is_file_exists = os.path.isfile(output_file_csv)
             with open(output_file_csv, "a") as f:
                 # Check if the file exists
                 if not is_file_exists:
-                    f.write(
-                        "Time , Signal value , Temperature , Humidity , Battery Voltage , Light Sensor Value \n"
-                    )
-                f.write(
-                    f"{time_now},{data[0]},{data[1]},{data[2]},{data[3]},{data[4]},{data[5]}\n"
-                )
+                    f.write("Time ,Battery Voltage ,Relay Status \n")
+                f.write(f"{time_now},{data[0]},{data[1]}\n")
             time.sleep(1)
         except Exception as e:
             print(f"An error occurred: {e}")
