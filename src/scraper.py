@@ -1,3 +1,4 @@
+#!/bin/env python3
 """
 - Author : Arun CS
 - Date : 2024-10-03
@@ -18,7 +19,7 @@ time_now = datetime.now().strftime("%H:%M:%S")
 
 current_date = datetime.now().strftime("%Y-%m-%d")
 # esp32/esp8266 web server link
-esp_url = "http://192.168.48.50/data"
+esp_url = "http://192.168.246.50/data"
 
 
 def get_esp_data():
@@ -36,7 +37,7 @@ def get_esp_data():
         return data
     except Exception as e:
         print(f"An error occurred: {e}")
-        time.sleep(0.01)
+        time.sleep(5)
         get_esp_data()
 
 
