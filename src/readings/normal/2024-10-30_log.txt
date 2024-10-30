@@ -1,0 +1,8 @@
+Time , Battery Voltage ,  Relay State 
+2024-10-30 21:35:45 Battery Voltage  12.6 Relay State off 
+2024-10-30 21:35:47 Battery Voltage  12.58 Relay State off 
+2024-10-30 21:35:49 Battery Voltage  12.58 Relay State off 
+2024-10-30 21:35:50 Battery Voltage  12.58 Relay State off 
+2024-10-30 21:35:51 Battery Voltage  12.6 Relay State off 
+2024-10-30 21:35:53 Battery Voltage  12.58 Relay State off 
+2024-10-30 21:35:54 Battery Voltage  12.6 Relay State off 
